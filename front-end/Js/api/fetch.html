@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Fetch API Example</h3>
+<button onclick="fetchData()">Fetch Data</button>
+
+<pre id="output"></pre>
+
+<script>
+function fetchData() {
+  fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(response => {
+      return response.json(); 
+    })
+    .then(data => {
+      document.getElementById('output').textContent = JSON.stringify(data,null,2);
+    })
+    .catch(error => {
+      document.getElementById('output').textContent = 'Fetch error: ' + error.message;
+    });
+}
+</script>
+
+</body>
+</html>

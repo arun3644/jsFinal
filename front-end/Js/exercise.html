@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // //hoisting
+        // a=10;
+        // console.log(a);
+        // let a;
+        // b=10;
+        // console.log(b);
+        // const b;
+        // c=10
+        // console.log(c);
+        // var c;
+
+
+
+
+
+
+
+
+
+
+        //objects
+        //   let item={
+        //     name:'phone',
+        //     price:20000,
+        //     quantity:1,
+        //     colors:{
+        //         r:'red',
+        //         g:'green',
+        //         y:'yellow'
+        //     },
+        //     categories:['button phone', 'Smart phone', 'lap'],
+        //     cart:function(){
+        //         console.log("Item added to the cart");
+        //     },
+        //     list(){
+        //         console.log("item added to the list");
+        //     }
+        // }
+
+        // console.log(item);
+
+        //another way
+        // let item2= new Object();
+        // item2.name='charger';
+        // item2.price=30000;
+        // item2.quantity=5;
+        // console.log(item2);
+
+        // console.log(item.name);
+        // console.log(item['name']);
+
+        // let key='price';
+        // console.log(item[key]);
+        // console.log(item.key); // undefined
+
+        // console.log(item.colors.r);
+        // console.log(item.categories[2]);
+
+        // item.cart();
+        // item.list();
+
+        // //new
+        // let employee = Object.create(item); 
+        // employee.name='akil';
+        // console.log(employee.name);
+
+        // console.log(item.name);
+
+
+
+
+
+
+
+
+
+
+
+        // //Syn Asyn
+        // function f1() {
+        //     console.log("first task");
+        // }
+        // function f2() {
+        //     console.log("second task");
+        // }
+        // function f3() {
+        //     console.log("third task");
+        // }
+        // f1();
+        // f2();
+        // f3();
+
+
+        // //call stack, queue, Event Loop
+        // function f4() {
+        //     console.log("fourth task");
+        // }
+        // function f5() {
+        //     setTimeout(() => {
+        //         console.log("fifth task");
+        //     }, 2000);
+        // }
+
+        // function f6() {
+        //     console.log("sixth task");
+        // }
+        // f4();
+        // f5();
+        // f6();
+
+
+
+
+
+
+
+
+
+
+
+        //prototype
+        // function A(name) {
+        //     this.name = name;
+        // }
+
+        // A.prototype.print = function () {
+        //     console.log(`hi! i'm ${this.name}`);
+        // }
+
+        // const a = new A('arun');
+        // a.print();
+
+        // const p = new A('akikesh');
+        // p.print();
+
+
+
+
+
+
+        // //callback
+        // function fetchData(callback) {
+        //     setTimeout(() => {
+        //         console.log("Data fetched");
+        //         callback();
+        //     }, 1000);
+        // }
+
+        // function showMessage() {
+        //     console.log("This runs after fetching data");
+        // }
+
+        // fetchData(showMessage);
+
+
+
+
+
+
+
+
+        // //asynchronous 
+        // console.log("Start");
+
+        // setTimeout(() => {
+        //     console.log("Running async task.");
+        // }, 2000);
+
+        // console.log("End");
+
+
+
+
+
+
+
+
+
+
+        // //promise
+        // function get() {
+        //     return new Promise((resolve, reject) => {
+        //         let success = true;
+        //         setTimeout(() => {
+        //             if (success) {
+        //                 resolve(42);
+        //             } else {
+        //                 reject("Failed to get number");
+        //             }
+        //         }, 1500);
+        //     });
+        // }
+
+        // get().then((num) => {
+        //         console.log("Received:", num);
+        //     })
+        //     .catch((error) => {
+        //         console.log("Error:", error);
+        //     });
+
+
+
+
+
+
+
+
+
+
+
+        // //Aysnc and await
+        // function wait() {
+        //     return new Promise((resolve) => {
+        //         setTimeout(() => {
+        //             resolve("Async-Await completed");
+        //         }, 2000);
+        //     });
+        // }
+
+        // async function run() {
+        //     console.log("Task started");
+        //     const result = await wait();
+        //     console.log(result);
+        // }
+
+        // run();
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // //closure
+        // function counter() {
+        //     let count = 0;
+
+        //     return function () {
+        //         count++;
+        //         console.log(count);
+        //     };
+        // }
+
+        // const a = counter();
+
+        // a();
+        // a();
+        // a();
+
+
+
+
+    </script>
+</body>
+
+</html>

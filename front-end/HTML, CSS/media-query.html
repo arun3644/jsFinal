@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MEDIA-QUERY </title>
+  <style>
+    
+
+    .container {
+      display: grid;
+      gap: 16px;
+      padding: 20px;
+      background-color: palegreen;
+    }
+
+    .container div {
+      background-color: rgb(0, 171, 238);
+      padding: 20px;
+      margin: 5px;
+      border: 2px solid #333;
+      height: 100px;
+      box-sizing: border-box;
+    }
+
+    .container{
+      grid-template-columns: repeat(4,1fr);
+    }
+    @media(max-width:1200px){
+      .container{
+        grid-template-columns:repeat(3,1fr);
+      }
+    }
+    @media(max-width:760px){
+      .container{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+    @media(max-width:460px){
+      .container{
+        grid-template-columns:1fr;
+      }
+    }
+    .c{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="c">GRID using Media Query</h2>
+  <div class="container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+</body>
+</html>

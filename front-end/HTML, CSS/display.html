@@ -1,0 +1,118 @@
+<!DOCT>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Display</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            line-height: 2;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .box {
+            background-color: rgb(18, 150, 202);
+            padding: 10px;
+            border: 1px solid black;
+            color: white;
+            margin: 5px;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+
+        }
+
+        .flex-container div {
+            flex: 1 1;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>display</h2>
+
+    <div class="section">
+        <h3>Block </h3>
+        <div class="box block">Block 1</div>
+        <div class="box block">Block 2</div>
+    </div>
+
+    <div class="section">
+        <h3> Inline</h3>
+        <span class="box inline">Inline 1</span>
+        <span class="box inline">Inline 2</span>
+    </div>
+
+    <div class="section">
+        <h3> Inline-Block</h3>
+        <span class="box inline-block">Inline-Block 1</span>
+        <span class="box inline-block">Inline-Block 2</span>
+    </div>
+
+    <div class="section">
+        <h3>None (hidden)</h3>
+        <div class="box none">You can't see me!</div>
+        <p>This is hidden element.</p>
+    </div>
+
+    <div class="section">
+        <h3>Flex</h3>
+        <div class="flex-container">
+            <div class="box">Flex 1</div>
+            <div class="box">Flex 2</div>
+            <div class="box">Flex 3</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3> Grid</h3>
+        <div class="grid-container">
+            <div class="box">Grid 1</div>
+            <div class="box">Grid 2</div>
+            <div class="box">Grid 3</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

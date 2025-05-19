@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+        const div = document.createElement("div");
+        div.id = "div";
+
+
+        function button(id, text) {
+            const btn = document.createElement("button");
+            btn.id = id;
+            btn.textContent = text;
+            btn.style.display = "block";
+            btn.style.margin = "10px";
+            return btn;
+        }
+
+        const add = button("add", "ADD");
+        const remove = button("remove", "Remove");
+        const replace = button("replace", "Replace");
+
+        div.appendChild(add);
+        div.appendChild(remove);
+        div.appendChild(replace);
+        function createbox(id, text, color) {
+            const box = document.createElement("div");
+            box.classList.add("box");
+            box.id = id;
+            box.textContent = text;
+            box.style.margin = "10px";
+            box.style.backgroundColor = color;
+            box.style.width = "100px";
+            box.style.height = "100px";
+            box.style.display = "inline-block";
+            return box;
+        }
+
+        const box1 = createbox("box1", " box 1", "skyblue");
+        const box2 = createbox("box1", " box 2", "skyblue");
+
+        div.appendChild(box1);
+        div.appendChild(box2);
+
+
+
+
+        add.addEventListener("click", () => {
+            const newbox = createbox("newBox", "New Box", "green");
+            div.appendChild(newbox);
+        })
+
+        remove.addEventListener("click", () => {
+            if (div.lastElementChild) {
+                div.removeChild(div.lastElementChild);
+            }
+        })
+
+        replace.addEventListener("click",()=>{
+            const newBox=createbox("newbox","Replaced Box", "pink");
+            div.replaceChild(newBox, box1);
+        })
+        document.body.appendChild(div);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+</head>
+
+<body>
+    <div id="unique">This is content</div>
+
+    <div class="box">This is content1</div>
+    <div class="box">This is content2</div>
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+
+    <input type="text" value="Text">
+    <input type="password" placeholder="enter a password">
+    <input type="text" placeholder="Enter Name">
+    <input type="email" placeholder="Enter Email">
+
+    <div class="container">
+            
+    </div>
+    <script>
+        //id selector
+        $('#unique').text("new Content");
+
+        //class selector
+        $('.box').css('background-color', "yellow");
+        $('.box').eq(0).css('display', "inline");
+        $('.box').css('margin', "10px");
+
+        //Element selector
+        $('p').eq(0).hide();//eq() method is used to access the particular class using index value
+
+
+        //attribute selector
+        $('[value]').css({
+            'background-color': 'red',
+            'border': 'none'
+        })
+        //attribute selector with value
+        $("[type='email']").val("Email");
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            background-color: greenyellow;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .a div{
+            display: grid;
+            height: 100px;
+            border:1px solid black;
+            margin:5px;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .a1{
+            display:grid;
+            background-color: greenyellow;
+            padding:10px;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+        }
+        .a1 div{
+            display:flex;
+            margin:5px;
+            justify-content: center;
+            align-items: center;
+           height: 100px;
+           border:1px solid black;
+        }
+ 
+        .d {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+ 
+        .c {
+            text-align: center;
+        }
+ 
+        .container {
+            display: grid;
+            background-color: lightcoral;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-areas:
+                "h h h h h h h h"
+                "s1 m m m m m m  s2"
+                "f f f f f f f f ";
+            grid-template-rows: 10vh 80vh 10vh
+        }
+ 
+        .container div {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+ 
+ 
+        .h1,
+        .f1 {
+            grid-column: 1/9;
+        }
+ 
+        .m11 {
+            grid-column: span 6;
+        }
+ 
+        .h {
+            grid-area: h;
+        }
+ 
+        .s1 {
+            grid-area: s1;
+        }
+ 
+        .m1 {
+            grid-area: m;
+        }
+ 
+        .s2 {
+            grid-area: s2;
+        }
+ 
+        .f {
+            grid-area: f
+        }
+ 
+        .m2 {
+            grid-area: m2;
+        }
+ 
+        .m3 {
+            grid-area: m3;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div class="d">
+        <h2 class="c">GRID</h2>
+        <div class="a">
+            <div class="b">one</div>
+            <div class="cc">two</div>
+            <div class="cc">one</div>
+            <div class="cc">two</div>
+            <div class="cc">one</div>
+            <div class="cc">two</div>
+        </div>
+    </div>
+ 
+    <div class="d">
+        <h2 class="c">GRID with autofit</h2>
+        <div class="a1">
+            <div class="b">one</div>
+            <div class="cc">two</div>
+            <div class="cc">one</div>
+            <div class="cc">two</div>
+            <div class="cc">one</div>
+            <div class="cc">two</div>
+        </div>
+    </div>
+ 
+    <div class="d">
+        <h2></h2>
+ 
+    </div>
+ 
+    <div class="d">
+        <h2 class="c">GRID using grid-column span</h2>
+        <div class="container">
+            <div class="h1">header</div>
+            <div class="s11">sidebar</div>
+            <div class="m11">main</div>
+            <div class="s21">sidebar</div>
+            <div class="f1">footer</div>
+        </div>
+        <h2 class="c">GRID using grid-area</h2>
+        <div class="container">
+            <div class="h">header</div>
+            <div class="s1">sidebar</div>
+            <div class="m1">main</div>
+            <div class="s2">sidebar</div>
+            <div class="f">footer</div>
+        </div>
+ 
+ 
+    </div>
+ 
+</body>
+ 
+</html>s

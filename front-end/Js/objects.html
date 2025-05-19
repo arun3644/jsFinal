@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let item={
+            name:'phone',
+            price:20000,
+            quantity:1,
+            colors:{
+                r:'red',
+                g:'green',
+                y:'yellow'
+            },
+            categories:['button phone', 'Smart phone', 'lap'],
+            cart:function(){
+                console.log("Item added to the cart");
+            },
+            list(){
+                console.log("item added to the list");
+            }
+        }
+
+        console.log(item);
+        
+        //another way
+        // let item2= new Object();
+        // item2.name='charger';
+        // item2.price=30000;
+        // item2.quantity=5;
+        // console.log(item2);
+      
+
+        console.log(item.name);
+        console.log(item['name']);
+
+        let key='price';
+        console.log(item[key]);
+        console.log(item.key); // undefined
+
+        console.log(item.colors.r);
+        console.log(item.categories[2]);
+
+        item.cart();
+        item.list();
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background-color: rgb(59, 40, 10);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .d1 {
+
+            background: linear-gradient(to right, red, orange);
+
+        }
+
+        .d2 {
+
+            background: radial-gradient(circle, red, yellow);
+
+        }
+
+        .d3 {
+
+            background: linear-gradient(to top right, green, blue);
+
+        }
+
+        .d4 {
+
+            background: radial-gradient(ellipse, pink, purple);
+
+        }
+
+        .d1,
+        .d2,
+        .d3,
+        .d4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Combined Gradients Example</h2>
+
+    <div class="container">
+
+        <div class="d1">
+            Linear Gradient
+        </div>
+
+        <div class="d2">
+            Radial Gradient - Circle
+        </div>
+
+        <div class="d3">
+            Diagonal Linear Gradient
+        </div>
+
+        <div class="d4">
+            Radial Gradient - Ellipse
+        </div>
+    </div>
+
+</body>
+
+</html>

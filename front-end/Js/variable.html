@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //scope
+        var b = 1; //function or global scope
+        let c = 2; // block
+        let d = 3; //block
+        {
+            console.log(b);
+            console.log(c);
+            console.log(d);
+            var b2 = 1;
+            let c2 = 2;
+            let d2 = 3;
+        }
+
+        // console.log(b1);
+        // console.log(c1);
+        // console.log(d1);
+         console.log(d);
+
+
+
+        
+        //redeclare
+        var a = 10;
+        //re declare is not possible in let and const
+        // let a=10;
+        // const a=10;
+        console.log(a);
+        var a = "hi";
+        console.log(a);
+
+
+    </script>
+</body>
+
+</html>

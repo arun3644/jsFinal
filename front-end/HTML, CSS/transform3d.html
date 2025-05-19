@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D CSS Transformations Example</title>
+    <style>
+   
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: #4CAF50;
+            margin: 10px;
+            border: 2px solid #2C6B3D;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .translate3d:hover {
+            transform: translate3d(50px, 50px, 50px);
+        }
+
+        .scale3d:hover {
+            transform: scale3d(1.5, 1.5, 1.5);
+        }
+
+        .rotate3d:hover {
+            transform: rotate3d(1, 1, 0, 45deg);
+        }
+
+        .rotateX:hover {
+            transform: rotateX(45deg);
+        }
+
+        .rotateY:hover {
+            transform: rotateY(45deg);
+        }
+
+        .rotateZ:hover {
+            transform: rotateZ(45deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>translate3d</h2>
+    <div class="box translate3d"></div>
+
+    <h2>scale3d</h2>
+    <div class="box scale3d"></div>
+
+
+    <h2>rotate3d</h2>
+    <div class="box rotate3d"></div>
+
+    <h2>rotateX</h2>
+    <div class="box rotateX"></div>
+
+    <h2>rotateY</h2>
+    <div class="box rotateY"></div>
+
+    <h2>rotateZ</h2>
+    <div class="box rotateZ"></div>
+
+
+</body>
+</html>

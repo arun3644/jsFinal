@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let users = [
+      { id: 1, name: "arun" },
+      { id: 2, name: "akilesh" }
+    ];
+
+
+    function register(user) {
+      return new Promise((res,rej) => {
+        setTimeout(() => {
+          if (users) {
+            users.push(user);
+            res("Created Successfully");
+          }
+          else{
+            rej("No Object found")
+          }
+
+        }, 500);
+      });
+    }
+
+
+    function show() {
+      return new Promise((res, rej) => {
+        setTimeout(() => {
+          if (users.length > 0) {
+            res(users);
+          } else {
+            rej("No data found");
+          }
+        }, 1000);
+      });
+    }
+
+
+    async function run() {
+      try {
+
+        let userList = await show();
+        console.log("Users:", userList);
+
+        let msg = await register({ id: 4, name: "naveen" });
+        console.log(msg);
+
+
+        userList = await show();
+        console.log("Users after registration:", userList);
+
+      } catch (err) {
+        console.error("Error:", err);
+      }
+    }
+
+
+    run();
+
+
+  </script>
+
+</body>
+
+</html>

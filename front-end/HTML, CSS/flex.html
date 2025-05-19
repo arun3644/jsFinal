@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>flex</title>
+  <style>
+   
+    body {
+      padding: 20px;
+    
+    }
+    .c{
+        text-align: center;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      background-color: rgb(241, 218, 218);
+      padding: 20px;
+      border: 2px solid gray;
+    
+    }
+
+    .flex {
+      background-color: rgb(95, 179, 212);
+      padding: 20px;
+      margin: 5px;
+      border: 2px solid black;
+      height: 100px;
+      flex: 1 1 200px; 
+    }
+
+    @media (max-width: 600px) {
+      .flex-container {
+        flex-direction: column; 
+        align-items: stretch;
+      }
+
+      .flex {
+        flex: 1 1 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="c">Flex</h2>
+  <div class="flex-container">
+    <div class="flex">Item 1</div>
+    <div class="flex">Item 2</div>
+    <div class="flex">Item 3</div>
+    <div class="flex">Item 4</div>
+    <div class="flex">Item 5</div>
+  </div>
+
+</body>
+</html>

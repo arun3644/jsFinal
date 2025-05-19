@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Navigation Example</title>
+</head>
+
+<body>
+
+    <div id="parentDiv">
+        <p id="child1">Child 1</p>
+        <p id="child2">Child 2</p>
+        <p id="child3">Child 3</p>
+        <p id="child4">Child 4</p>
+    </div>
+
+    <script>
+        const parentDiv = document.getElementById("parentDiv");
+
+
+        const firstChild = document.getElementById("child1");
+        console.log("Parent of 'Child 1':", firstChild.parentNode);
+        console.log("Parent of 'Child 1':", firstChild.parentNode.firstChild);
+
+        console.log("Second child:", parentDiv.childNodes[3]);
+
+        console.log("First child:", parentDiv.firstChild);
+
+        console.log("Last child:", parentDiv.lastChild);
+
+        const secondChild = document.getElementById("child2");
+        console.log("Next sibling of 'Child 2':", secondChild.nextSibling);        
+        console.log("Next sibling of 'Child 2':", secondChild.nextSibling.nextSibling);
+
+        console.log("Previous sibling of 'Child 2':", secondChild.previousSibling);
+    </script>
+
+</body>
+
+</html>

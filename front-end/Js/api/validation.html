@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Enter 5-digit ZIP Code</h3>
+
+<input type="text" id="zip" pattern="\d{5}"  required>
+<button onclick="check()">Check</button>
+
+<p id="msg"></p>
+
+<script>
+function check() {
+  const a = document.getElementById("zip");
+  let b;
+
+  if (!a.checkValidity()) {
+    b = "Invalid ZIP code!";
+  } else {
+    b = "Valid ZIP code!";
+  }
+
+  document.getElementById("msg").innerText = b;
+}
+</script>
+
+</body>
+</html>
