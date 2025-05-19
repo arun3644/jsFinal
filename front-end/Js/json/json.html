@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <script src="jso.js"></script>
+
+    <style>
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            border: 1px solid black;
+            margin: auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            font-size: 17px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid rgb(163, 152, 152);
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 255);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgb(15, 155, 22);
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: rgb(2, 100, 2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>REGISTRATION FORM</h2>
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" required>
+        <label for="rollNo">ROLL NO</label>
+        <input type="number" id="email" name="rollNo" required>
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email " required>
+        <label for="college">COLLeGE NAME</label>
+        <input type="text" name="college" id="college" required>
+        <button onclick="add()">ADD</button>
+        <button onclick="get()">GET</button>
+    </div>
+    <div id="result" class="container"></div>
+
+    <script src="./json.js"></script>
+</body>
+
+</html>

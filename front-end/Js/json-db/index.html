@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Form</title>
+ 
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    h2, h3 {
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    #result {
+        margin-top: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+</head>
+<body>
+
+  <h2>Add Student</h2>
+  <label>Name: <input type="text" id="name"></label><br>
+  <label>Roll No: <input type="text" id="rollno"></label><br>
+  <label>Email: <input type="email" id="email"></label><br>
+  <label>Age: <input type="number" id="age"></label><br>
+  <label>College: <input type="text" id="college"></label><br><br>
+
+  <button onclick="add()">Add Student</button>
+  <button onclick="get()">Get Students</button>
+
+  <h3>Student List</h3>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

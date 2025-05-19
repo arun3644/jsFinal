@@ -1,0 +1,11 @@
+{
+    "student":[
+        {
+            "id":1,
+            "name":"arun",
+            "rollNo":3,
+            "email":"arun@gmail.com",
+            "college":"karpagam"
+        }
+    ]
+}
