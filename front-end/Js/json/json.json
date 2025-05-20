@@ -1,11 +1,18 @@
 {
-    "student":[
-        {
-            "id":1,
-            "name":"arun",
-            "rollNo":3,
-            "email":"arun@gmail.com",
-            "college":"karpagam"
-        }
-    ]
+  "student": [
+    {
+      "id": 1,
+      "name": "arun",
+      "rollno": 3,
+      "email": "arun@gmail.com",
+      "college": "karpagam"
+    },
+    {
+      "id": 1747741885507,
+      "name": "akilesh",
+      "email": "akilesh@gmail.com",
+      "rollno": 11,
+      "college": "ksr"
+    }
+  ]
 }

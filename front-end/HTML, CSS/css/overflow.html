@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+       
+        .container div{
+            width:200px;
+            height: 200px;
+            border:1px solid black;
+            margin:20px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .d1{
+            overflow: none;
+        }
+        .d2{
+            overflow: hidden;
+        }
+        .d3{
+            overflow: scroll;
+        }
+        .d4{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     
+       
+        <h2>hidden</h2>
+        <div class="d2">
+             <p>Mphasis Limited is an Indian multinational information technology services and consulting company. The company provides infrastructure technology and applications outsourcing services, as well as architecture guidance, application development and integration, and application management services. Incorporated in 1992, Mphasis serves marquee customers across the globe including six top global banks, eleven out of fifteen top mortgage lenders, and three top global insurance companies and has about 37,500 employees across twenty one countries. Mphasis.ai is a new business unit that focuses on transforming organizations globally by unlocking the potential of Artificial Intelligence.</p>
+        </div>
+        <h2>scroll</h2>
+        <div class="d3"> <p>Mphasis Limited is an Indian multinational information technology services .</p>
+       </div>
+
+       <h2 >auto</h2>
+        <div class="d4"> <p>Mphasis Limited is an Indian multinational information technology services and consulting company. The company provides infrastructure technology and applications outsourcing services, as well as architecture guidance, application development and integration, and application management services. Incorporated in 1992, Mphasis serves marquee customers across the globe including six top global banks, eleven out of fifteen top mortgage lenders, and three top global insurance companies and has about 37,500 employees across twenty one countries. Mphasis.ai is a new business unit that focuses on transforming organizations globally by unlocking the potential of Artificial Intelligence.</p>
+       </div>
+   <h2>NONE</h2>
+        <div class="d1">
+            <p>Mphasis Limited is an Indian multinational information technology services and consulting company. The company provides infrastructure technology and applications outsourcing services, as well as architecture guidance, application development and integration, and application management services. Incorporated in 1992, Mphasis serves marquee customers across the globe including six top global banks, eleven out of fifteen top mortgage lenders, and three top global insurance companies and has about 37,500 employees across twenty one countries. Mphasis.ai is a new business unit that focuses on transforming organizations globally by unlocking the potential of Artificial Intelligence.</p>
+        </div>
+    </div>
+</body>
+</html>

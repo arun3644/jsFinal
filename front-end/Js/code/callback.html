@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function myDisplayer(some) {
+            console.log(some);
+        }
+
+        function myCalculator(num1, num2) {
+            let sum = num1 + num2;
+            return sum;
+        }
+
+
+        let result = myCalculator(5, 5);
+        myDisplayer(result);
+
+
+
+
+
+
+
+
+        let users = [
+            { id: 1, name: "arun" },
+            { id: 2, name: "akilesh" }
+        ];
+
+          function register(user, callback) {
+            setTimeout(() => {
+                users.push(user);
+                console.log(`${user.name} registered successfully`);
+                callback();
+            }, 1000);
+          }
+
+          function show(user,callback){
+            setTimeout(()=>{
+                console.log("Users: ",user);
+                callback();
+            })
+          }
+         function send(user, callback) {
+            setTimeout(() => {
+                console.log(`Welcome message sent to ${user.name}.`);
+                callback();
+            }, 1000);
+        }
+
+
+        register({id:3, name:'karthi'},()=>{
+            send({id:3,name:'karthi'},()=>{
+                show(users,()=>{
+                    console.log("Task Completed.....");
+                })
+            })
+        })
+
+
+
+    </script>
+</body>
+
+</html>

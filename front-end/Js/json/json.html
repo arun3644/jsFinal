@@ -18,8 +18,14 @@
             border: 1px solid black;
             margin: auto;
             padding: 20px;
+            margin-bottom: 20px;
         }
-
+        table{
+            max-width: 600px;
+            margin-top:50px;
+            margin: auto;
+            padding: 20px;
+        }
         label {
             display: block;
             font-weight: bold;
@@ -52,6 +58,7 @@
         button:hover {
             background-color: rgb(2, 100, 2);
         }
+
     </style>
 </head>
 
@@ -61,16 +68,20 @@
         <h2>REGISTRATION FORM</h2>
         <label for="name">NAME</label>
         <input type="text" id="name" name="name" required>
+
         <label for="rollNo">ROLL NO</label>
-        <input type="number" id="email" name="rollNo" required>
+        <input type="number" id="rollno" name="rollNo" required>
+
         <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email " required>
-        <label for="college">COLLeGE NAME</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="college">COLLEGE NAME</label>
         <input type="text" name="college" id="college" required>
-        <button onclick="add()">ADD</button>
+
+        <button onclick="add()" type="submit">ADD</button>
         <button onclick="get()">GET</button>
     </div>
-    <div id="result" class="container"></div>
+    <div id="result"></div>
 
     <script src="./json.js"></script>
 </body>

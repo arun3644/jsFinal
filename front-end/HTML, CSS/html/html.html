@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+ 
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+ 
+        .c {
+            text-align: center;
+        }
+ 
+        .d {
+            border: 1px solid black;
+            margin: 5px;
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+ 
+        .table-center {
+            display: flex;
+            justify-content: center;
+        }
+ 
+ 
+        .form {
+            width: fit-content;
+            border: 1px solid black;
+ 
+        }
+ 
+        .form input,
+        textarea {
+            float: right;
+        }
+ 
+        #male,
+        #female,
+        #agree,
+        #submit {
+            float: none;
+        }
+ 
+        #agree,
+        label[for="agree"] {
+            display: inline-block;
+            width: fit-content;
+        }
+ 
+        #submit {
+            background-color: green;
+            border: none;
+            border-radius: 2px;
+            margin-left: 2px;
+        }
+ 
+        .semantic div {
+            border: 1px solid black;
+        }
+ 
+        .header {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: aquamarine;
+        }
+ 
+        .footer {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: aquamarine;
+        }
+ 
+        .header,
+        .footer {
+            position: sticky;
+        }
+    </style>
+ 
+</head>
+ 
+<body>
+    <div class="d c header">
+        <header>
+            <h1>HTML</h1>
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#">About</a> |
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+    </div>
+ 
+    <div class="d">
+        <section>
+ 
+            <h2 class="c">Section</h2>
+            <article class="d ">
+                <h3 class="c">Article</h3>
+ 
+                <p>This is a <strong>paragraph</strong> with <em>emphasized text</em>, <mark>highlighted</mark> text,
+                    and a
+                    <a href="#">link</a>.
+                </p>
+                <p>Here's a line break<br>and a horizontal rule below:</p>
+                <hr>
+ 
+                <pre>
+    function greet() {
+        console.log("Hello!");
+    }
+                    </pre>
+ 
+                <details>
+                    <summary>More Info</summary>
+                    <p>This is hidden text inside the details tag.</p>
+                </details>
+            </article>
+        </section>
+ 
+    </div>
+ 
+ 
+    <aside class="d">
+        <h4>Sidebar</h4>
+        <p>This is some side content.</p>
+    </aside>
+ 
+    <div class="d c  ">
+        <div>
+            <h2>Table</h2>
+        </div>
+        <div class="table-center">
+            <table>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Contact Info</th>
+                    <th rowspan="2">Age</th>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+                <tr>
+                    <td>Arun</td>
+                    <td>arun@gmail.com</td>
+                    <td>1233456234</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Akilesh</td>
+                    <td>akileshsivaraj@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Akilesh</td>
+                    <td>akileshsivaraj@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Akilesh</td>
+                    <td>akileshsivaraj@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Akilesh</td>
+                    <td>akileshsivaraj@gmail.com</td>
+                    <td>9876543210</td>
+                    <td>28</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+ 
+    <div class="d ">
+        <h2>Form Example</h2>
+        <div class="form">
+            <form>
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+ 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+ 
+                    <label for="pass">Password: </label>
+                    <input type="password" id="pass" name="pass" required><br><br>
+ 
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+ 
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
+ 
+                </fieldset>
+ 
+                <fieldset>
+ 
+                    <label for="message" style="vertical-align: top;">Message:</label>
+                    <textarea id="message" name="message"></textarea><br><br><br><br>
+ 
+ 
+                    <label for="agree">I agree to the terms</label>
+                    <input type="checkbox" id="agree" name="agree"><br><br>
+                </fieldset>
+ 
+                <input type="submit" id="submit" value="Submit">
+            </form>
+ 
+        </div>
+ 
+    </div>
+ 
+    <div class="d">
+        <h2>List</h2>
+        <div class="d">
+            <h3>Unnordered List</h3>
+            <ul>
+                <li>apple</li>
+                <li>orange</li>
+                <li>banana</li>
+            </ul>
+        </div>
+        <div class="d">
+            <h3>Ordered List</h3>
+            <ol>
+                <li>apple</li>
+                <li>orange</li>
+                <li>banana</li>
+            </ol>
+        </div>
+        <div class="d">
+            <h3> Description List</h3>
+            <dl>
+                <dt>Apple</dt>
+                <dd>A sweet, crisp fruit often red, green, or yellow.</dd>
+                <dt>Orange</dt>
+                <dd> A juicy citrus fruit rich in vitamin C.</dd>
+                <dt>Bsanana</dtd>
+                <dd> A soft, sweet fruit with a yellow peel and high in potassium.</dd>
+            </dl>
+        </div>
+    </div>
+ 
+    <div class="d ">
+        <h1 class="c">MEDIA</h1>
+        <h2>iframe</h2>
+        <iframe width="320" height="240" src="https://www.youtube.com/embed/_HNpH9Pv2W8">
+        </iframe>
+ 
+        <h2>audio</h2>
+        <audio controls>
+            <source src="song.mp3">
+            Your browser does not support the audio element.
+        </audio>
+ 
+        <h2>video</h2>
+        <video widht="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+ 
+ 
+    </div>
+ 
+    <div class="footer c d">
+        <footer>
+            <p>&copy; 2025 All Rights Reserved.</p>
+        </footer>
+ 
+    </div>
+ 
+ 
+</body>
+ 
+</html>
+YouTube
+ 
+css code
+ 

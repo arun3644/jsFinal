@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Class, Inheritance, Static</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Animal {
+            constructor(name) {
+                this.name = name;
+            }
+
+            speak() {
+                return `${this.name} makes a sound`;
+            }
+
+            static category() {
+                return "I am an Animal";
+            }
+        }
+
+        class Dog extends Animal {
+            constructor(name, breed) {
+                super(name);
+                this.breed = breed;
+            }
+
+            speak() {
+                return `${this.name} barks. It is a ${this.breed}`;
+            }
+        }
+
+        const myDog = new Dog("Tommy", "Labrador");
+
+        console.log(myDog.speak());
+        console.log(Animal.category());
+        // console.log(myDog.category());
+    </script>
+
+</body>
+
+</html>
